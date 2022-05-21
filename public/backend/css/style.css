@@ -1,0 +1,416 @@
+* {
+    font-family: "Rowdies", cursive;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+* {
+    font-family: "League Spartan", sans-serif;
+    font-family: "Rowdies", cursive;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+#navbar {
+    height: 50px;
+    width: 1500px;
+    background-color: white;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-left: 40px;
+    display: flex;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+#info-1-4 {
+    margin-top: 20px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head-color {
+    background-color: blue;
+    border-radius: 10px;
+    height: 30px;
+    width: 6px;
+    margin-top: 5px;
+}
+
+#info-1 {
+    height: 420px;
+    width: 350px;
+    background-color: white;
+    margin-left: 10px;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.info-date {
+    display: flex;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.info-date-1 {
+    height: 50px;
+    width: 120px;
+    background-color: rgb(242, 246, 249);
+}
+
+.info-date-2 {
+    height: 50px;
+    width: 70px;
+    background-color: rgb(230, 234, 237);
+}
+
+.info-date-3 {
+    height: 50px;
+    width: 120px;
+    background-color: rgb(242, 246, 249);
+}
+
+#table-1 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#info-2 {
+    height: 420px;
+    width: 350px;
+    background-color: white;
+    margin-left: 25px;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+#info-3 {
+    height: 420px;
+    width: 350px;
+    background-color: white;
+    margin-left: 25px;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+#info-4 {
+    height: 420px;
+    width: 350px;
+    background-color: white;
+    margin-left: 25px;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.dashboard-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.dash-card {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    color: #ffffffbe;
+}
+
+.dash-card h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #ff6347b7;
+}
+
+.dash-card h4 {
+    font-size: 20px;
+    color: #daa520af;
+}
+
+.card-icon {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    padding-left: 170px;
+    transition: transform 1s;
+}
+
+.card-icon:hover {
+    transform: scale(1.1);
+}
+
+.card-icon svg {
+    fill: #8bbbbb71;
+}
+
+.dash-card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.dash-card-footer a {
+    font-size: 16px;
+    color: #eeeeeebd;
+    transition: all 0.5s;
+}
+
+.dash-card-footer a:hover {
+    color: #eeeeee;
+}
+
+.dash-card-footer svg {
+    font-size: 16px;
+    fill: goldenrod;
+}
+
+.card-icon svg path {
+    fill: none;
+    stroke: white;
+    stroke-width: 4px;
+    stroke-dasharray: 2, 2;
+    stroke-linejoin: round;
+}
+
+.responsive {
+    width: 200px;
+}
+
+/* controller packages card Hover style */
+
+.cardHover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(194, 188, 188, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.cardHover:hover,
+.cardHover:focus,
+.cardHover:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* new client image box */
+.webcam {
+    width: 300px !important;
+    height: 220px !important;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px grey;
+}
+.webcam > video {
+    margin-left: 10px;
+    margin-top: -0px;
+    border-radius: 10px;
+}
+.webImage {
+    width: 300px !important;
+    height: 220px !important;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px grey;
+}
+.webImage > img {
+    margin-left: 10px;
+    margin-top: -0px;
+    border-radius: 10px;
+}
+
+.imageCapture {
+    width: 300px;
+    height: 220px;
+    margin-left: -200px;
+    text-align: center !important;
+    border-radius: 10px;
+    font-size: 30px;
+    background: goldenrod;
+    box-shadow: 5px 5px 10px burlywood;
+    border: 1px solid white;
+}
+
+/* Common Settings CSS */
+.form-wizard {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+.navBox {
+    padding: 2px 20px 2px 0px;
+    /* border-right: 1px solid #0000007e; */
+}
+
+.formBox {
+    padding: 2px 0px 2px 20px;
+}
+.navBox {
+    width: 25%;
+}
+.formBox {
+    width: 75%;
+}
+
+.items {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(218, 165, 32, 0.158);
+    border-radius: 5px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    font-size: 14px;
+    color: #ece3e3;
+    margin: 10px 20px 10px 0px;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: relative;
+}
+.items span {
+    margin-right: 10px;
+}
+.items p {
+    padding-top: 15px;
+}
+
+.items:focus:after {
+    content: "";
+    left: 100%;
+    top: 50%;
+    margin-top: -13px;
+    border-left: 0;
+    border-bottom: 13px solid transparent;
+    border-top: 13px solid transparent;
+    border-left: 15px solid #7367f0;
+    position: absolute;
+}
+.items:hover,
+.items:focus {
+    background: #7367f0;
+    transition: all 0.5s;
+    color: black;
+    box-shadow: 0px 0px 6px 1px rgb(115 103 240 / 60%);
+}
+/* Client Search */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.height {
+    height: 100vh;
+}
+
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+}
+
+.search input {
+    height: 60px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4;
+}
+
+.search input:focus {
+    box-shadow: none;
+    border: 2px solid blue;
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+}
+
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
+    background: blue;
+}
+
+/*  Profil image */
+.round {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.accImage {
+    width: 200px !important;
+    height: 150px !important;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px grey;
+}
+.accImage img {
+    height: 130px;
+    width: 175px;
+    margin-left: -10px;
+    margin-top: -10px;
+    border-radius: 10px;
+}
+
+/* media for client camerea */
+@media only screen and (max-width: 400px) {
+    .smallQuery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .webcam {
+        margin-left: -35px;
+    }
+    .webImage {
+        margin-left: -5px;
+    }
+    .imageCapture {
+        margin-left: -5px;
+    }
+
+    /* Common Settings */
+    .navBox {
+        width: 20%;
+        border-right: none;
+        padding: 2px 10px 2px 0px;
+    }
+    .formBox {
+        width: 80%;
+        padding: 2px 0px 2px 10px;
+    }
+    .items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .items svg {
+        margin-left: 10px;
+        height: 30px;
+        width: 20px;
+    }
+    .items h3 {
+        font-size: 15px;
+    }
+    .item-text {
+        display: none;
+    }
+
+
+}
